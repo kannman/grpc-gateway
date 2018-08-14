@@ -34,7 +34,7 @@ From an elevated cmd.exe prompt set the GOPATH variable in windows and add the `
 Then `go get -u -v` the following packages:
 
     go get -u -v github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
-    go get -u -v github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
+    go get -u -v github.com/kannman/grpc-gateway/protoc-gen-swagger
     go get -u -v github.com/golang/protobuf/protoc-gen-go
 
 This will probably fail with similar output.

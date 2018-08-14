@@ -24,7 +24,7 @@ install:
   - test "${USE_BAZEL}" = true ||
     go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
   - test "${USE_BAZEL}" = true ||
-    go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
+    go get github.com/kannman/grpc-gateway/protoc-gen-swagger
   - test "${USE_BAZEL}" = true ||
     go get github.com/grpc-ecosystem/grpc-gateway/runtime
   - test "${USE_BAZEL}" = true ||
