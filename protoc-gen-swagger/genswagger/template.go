@@ -278,6 +278,10 @@ func renderMessagesAsDefinition(messages messageMap, d swaggerDefinitionsObject,
 
 		for _, f := range msg.Fields {
 			fieldValue := schemaOfField(f, reg, customRefs)
+
+			if f.GetNumber() == 1 && f.GetTypeName() == ".google.rpc.Status" {
+				continue
+			}
 			comments := fieldProtoComments(reg, msg, f)
 			if err := updateSwaggerDataFromComments(&fieldValue, comments); err != nil {
 				panic(err)
